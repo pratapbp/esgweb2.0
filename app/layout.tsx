@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Transform your business with AI-powered enterprise solutions, LCA management, and digital transformation tools.",
     creator: "@esgit",
   },
-  generator: "v0.dev",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({

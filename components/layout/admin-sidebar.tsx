@@ -112,7 +112,7 @@ const sidebarItems: SidebarItem[] = [
   },
 ]
 
-export const AdminSidebar = () => {
+export default function AdminSidebar() {
   const pathname = usePathname()
   const [expandedItems, setExpandedItems] = useState<string[]>(["Careers Management"])
 
@@ -126,7 +126,7 @@ export const AdminSidebar = () => {
   const SidebarItemComponent = ({ item, level = 0 }: { item: SidebarItem; level?: number }) => {
     const hasChildren = item.children && item.children.length > 0
     const isExpanded = expandedItems.includes(item.title)
-    const parentActive = hasChildren && isParentActive(item.children ?? [])
+    const parentActive = hasChildren && isParentActive(item.children)
 
     if (hasChildren) {
       return (
