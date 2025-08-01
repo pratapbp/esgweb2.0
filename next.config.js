@@ -10,6 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
+    metadataBase: new URL("https://esg-website.vercel.app"),
   },
 }
 
