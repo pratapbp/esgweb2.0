@@ -2,6 +2,7 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+<<<<<<< Updated upstream
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -14,6 +15,11 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
     />
   )
 }
+=======
+const Card = ({ children, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
+  return <div {...props}>{children}</div>;
+};
+>>>>>>> Stashed changes
 
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (

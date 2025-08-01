@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
@@ -17,5 +18,14 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
     />
   )
 }
+=======
+import React from 'react';
 
-export { Input }
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+const Input = (props: InputProps) => {
+  return <input {...props} />;
+};
+>>>>>>> Stashed changes
+
+export default Input;

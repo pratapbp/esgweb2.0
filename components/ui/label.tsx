@@ -1,10 +1,17 @@
 "use client"
 
+<<<<<<< Updated upstream
 import * as React from "react"
 import * as LabelPrimitive from "@radix-ui/react-label"
+=======
+import React from 'react';
+>>>>>>> Stashed changes
 
-import { cn } from "@/lib/utils"
+const Label = ({ children, ...props }: React.LabelHTMLAttributes<HTMLLabelElement>) => {
+  return <label {...props}>{children}</label>;
+};
 
+<<<<<<< Updated upstream
 function Label({
   className,
   ...props
@@ -22,3 +29,6 @@ function Label({
 }
 
 export { Label }
+=======
+export default Label;
+>>>>>>> Stashed changes
